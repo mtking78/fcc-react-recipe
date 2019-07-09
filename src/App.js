@@ -22,6 +22,22 @@ class App extends Component {
     console.log(this.state.recipes);
   }
 
+  componentDidMount = () => {
+    // Check local storage for stored "recipes" string before page tries to render null data and crashes.
+    // !!! Change to default view or message about performing a first or suggested search.
+    if(localStorage.getItem("recipes") !== null) {
+      const json = localStorage.getItem("recipes");
+      const recipes = JSON.parse(json);
+      this.setState({ recipes });
+    }
+  }
+
+  componentDidUpdate = () => {
+    // Create a string that contains all the JSON data from the search to be kept in local storage.
+    const recipes = JSON.stringify(this.state.recipes);
+    localStorage.setItem("recipes", recipes);
+  }
+
   render() {
     return (
       <div className="App">

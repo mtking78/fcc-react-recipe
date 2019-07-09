@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const API_KEY = "bb89b65280b78567a81f76e66875eac9";
 
@@ -33,7 +34,7 @@ class Recipe extends React.Component {
             <h3 className="active-recipe_title">
               { recipe.title }
             </h3>
-            <h4 className="active-recipe_subtitle">
+            <h4 className="active-recipe_publisher">
               Publisher: <span>{ recipe.publisher }</span>
             </h4>
             <p className="active-recipe_website">
@@ -44,7 +45,7 @@ class Recipe extends React.Component {
               </span>
             </p>
             <button className="active-recipe_button">
-              Go Home
+              <Link to="/">Back</Link>
             </button>
           </div>
         }
