@@ -1,3 +1,20 @@
+body {
+  background: #f3f3f3;
+}
+
+img {
+  height: 220px;
+  width: 100%;
+}
+
+a {
+  color: #e74c3c !important;
+}
+
+button:focus {
+  outline: none;
+}
+
 .App {
   text-align: center;
 }
@@ -12,4 +29,72 @@
 
 .App-title {
   font-size: 1.5em;
+}
+
+.form_input {
+  background: transparent;
+  border: 0;
+  border-bottom: solid 2px #2c3e50;
+  letter-spacing: 2px;
+  margin-right: 10px;
+  padding: 0.4rem;
+  width: 10%;
+}
+
+.form_button {
+  background: transparent;
+  border: solid 2px #e74c3c;
+  border-radius: 1px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0 0.2rem;
+  margin-left: 0.7rem;
+  padding: 0.2rem 0.9rem;
+  text-transform: uppercase;
+}
+
+.recipe_box {
+  background:#fff;
+  border-radius: 5px;
+  box-shadow: -1px 2px 34px -13px rgba(0,0,0,0.75);
+  overflow: hidden;
+  padding-bottom: 2rem;
+  text-align: left;
+}
+
+.recipe_button {
+  background: transparent;
+  border: solid 2px #e74c3c;
+  border-radius: 1px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin: 0 0.2rem;
+  margin-left: 0.7rem;
+  padding: 0.4rem 0.6rem;
+  text-transform: uppercase;
+}
+
+.recipe_text {
+  margin-left: 15px;
+}
+
+.recipe_title {
+  color: #e74c3c;
+  font-size: 1.1rem;
+  padding: 1.8rem 0 0.2rem 0;
+  text-transform: uppercase;
+}
+
+.recipe_subtitle {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.recipe_subtitle span {
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: none;
 }
